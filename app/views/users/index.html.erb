@@ -1,0 +1,37 @@
+<!-- this is the home page of profile app -->
+<div class="row">
+  <% @users.each do |user| %>
+    <div class="col-xs-6">
+      <div class="thumbnail">
+        <%= image_tag user.profilepic.url(:medium) %>
+      </div>
+    </div>
+    <div class="col-xs-8">
+      <p>
+        <strong>Userid:</strong>
+        <%= user.userID %>
+      </p>
+      <p>  
+        <strong>Username:</strong>  
+        <%= user.username %>
+      </p>
+      <p>      
+        <strong>Create Date:</strong>
+        <%= user.createDate %>
+      </p>
+      <p>   
+        <strong>Expiry Date:</strong>
+        <%= user.expiryDate %>
+      </p> 
+
+      <!--<%= link_to 'Show', user, class: "btn btn-link" %>-->
+      <%= link_to 'Edit', edit_user_path(user), class: "btn btn-link" %>
+      <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'New User', new_user_path, class: "btn btn-link"  %>
+
+
+

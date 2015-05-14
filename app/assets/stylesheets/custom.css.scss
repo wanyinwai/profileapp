@@ -1,0 +1,31 @@
+@import "bootstrap";
+
+body {
+	background-color: #F5F5F1;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nav bar css */
+.navbar-default {
+	background-color: #6699FF;
+}
+
+.navbar-default .navbar-brand {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: 400; 
+	color: #FFFFFF;
+	font-size: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: 400; 
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+/* css for profile details index page */
+.col-xs-8 {
+	p {font-size: 18px;};
+}
