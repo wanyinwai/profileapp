@@ -31,6 +31,12 @@ gem 'jbuilder', '~> 1.2'
 # Use paperclip gem for image uploading
 gem "paperclip", "~> 4.2"
 
+# Use dropbox gem for paperclip
+gem "paperclip-dropbox", ">= 1.1.7"
+
+# Use figaro gem for dropbox img protection
+gem "figaro"
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
