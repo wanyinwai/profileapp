@@ -3,7 +3,7 @@
   <% @users.each do |user| %>
     <div class="col-xs-6">
       <div class="thumbnail">
-        
+        <%= image_tag user.profilepic.url(:medium) %>
       </div>
     </div>
     <div class="col-xs-8">
